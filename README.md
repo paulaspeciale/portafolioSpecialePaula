@@ -1,8 +1,9 @@
 
 # :computer: Hola, mi nombre es Paula Speciale:panda_face:👋
 ## ✨ Soy una Programadora Full-Stack orientada al diseño Front-End.
-[Link al deploy](https://paulaspeciale.github.io/portafolioSpecialePaula/)
-#Proyecto final realizado para el curso Argentina Programa 4.0 Primeros pasos del desarrollo frontend.
+:computer: [Link al deploy](https://paulaspeciale.github.io/portafolioSpecialePaula/)
+
+#Proyecto final realizado para el curso Argentina Programa 4.0 Primeros pasos del desarrollo frontend. :floppy_disk:
 Para realizarlo utilice las siguientes tecnologias:
 - :space_invader: Javascript
 - :space_invader: HTML/CSS
