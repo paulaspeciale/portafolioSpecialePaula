@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang ="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Paula Speciale - CV -</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- minify -->
+<link href="https://unpkg.com/nes.css@0.0.2/css/nes.min.css" rel="stylesheet" />
+<!-- latest -->
+<link href="https://unpkg.com/nes.css/css/nes.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/nes.icons@latest/css/nes-icons.css">
+  </head>
+
+  <body>
+    
+    <header>
+      
+      
+    </header>
+    <div class="nombre"><p>Speciale Paula</p></div>
+    <div class="index">
+     
+      <div class="nes-container imgIndex">
+        <img src="./img/paula-speciale.jpg" width="350px" class="imageIndex">
+      </div>
+      <div class="nes-container indexContent">
+        <div class="nes-field is-inline">       
+        <input type="text" id="error_field" class="nes-input is-error" placeholder="FULL STACK WEB DEVELOPER ">
+        </div>
+        <br>
+        <label>
+          <input type="radio" class="nes-radio" name="answer" checked />
+          <span><a href="./cv-es.html">Mi CV</a></span>
+        </label>
+        <br>
+        <label>
+          <input type="radio" class="nes-radio" name="answer" />
+          <span><a href="https://www.linkedin.com/in/paula-speciale-b834b826/" target="_blanck" rel="noreferrer">Mi LinkedIn</a></span>
+        </label>
+        <br>
+        <label>
+          <input type="radio" class="nes-radio" name="answer" />
+          <span><a href="https://github.com/paulaspeciale" target="_blanck" rel="noreferrer">Mi GitHub</a></span>
+        </label>
+        
+        <div class="nes-field is-inline">
+            <input type="text" id="warning_field" class="nes-input is-success" placeholder="Tecnologias">
+        </div>
+        <br>
+        <label>
+          <input type="radio" class="nes-radio" name="answer" checked />
+          <span>HTML</span>
+        </label>
+        <label>
+          <input type="radio" class="nes-radio" name="answer" />
+          <span>CSS</span>
+        </label>
+        <br>
+        <label>
+          <input type="radio" class="nes-radio" name="answer" checked />
+          <span>React</span>
+        </label>        
+        <label>
+          <input type="radio" class="nes-radio" name="answer" />
+          <span>Redux</span>
+        </label>
+        <br>
+        <label>
+          <input type="radio" class="nes-radio" name="answer" checked />
+          <span>JavaScript</span>
+        </label>        
+        <label>
+          <input type="radio" class="nes-radio" name="answer" />
+          <span>Express</span>
+        </label>
+        <br>
+        <label>
+          <input type="radio" class="nes-radio" name="answer" checked />
+          <span>PostgreSQL</span>
+        </label>        
+        <label>
+          <input type="radio" class="nes-radio" name="answer" />
+          <span>Sequelize</span>
+        </label>
+        <div class="nes-field ">
+          <input type="text" id="warning_field" class="nes-input is-warning " placeholder="Proyectos" >
+      
+          <!-- Proyectos          -->
+          <dialog id="dialog1">
+            <button type="button1" class="nes-btn is-success">El Campito Refugio</button><br><br>
+            <div class="ventana">
+             <img src="./img/proyectos/elcampito.jpg" class="imgProyecto"><br>
+             <div class="lists">
+               <ul class="nes-list is-circle">
+                  <li><a href="https://github.com/paulaspeciale/el-campito-refugio-henry">Link al Repositorio</a></li>
+                  <li><a href="https://el-campito-refugio.vercel.app/">Deploy</a></li>
+                  <li>Proyecto Final del Bootcamp - soyHenry</li>
+                  <li>En este proyecto tuve la responsabilidad de implementar el Front responsivo.</li>
+               </ul>
+             </div>
+          </div>
+            <button  type="button" class="nes-btn is-primary derecha" id="cancel">Salir</button>
+          </dialog>
+          <!-- Proyectos          -->
+          <dialog  id="dialog2" >
+            <button type="button" class="nes-btn is-success">Countries - App</button><br><br>
+            <div class="ventana">
+              <img src="./img/proyectos/countries.jpg" class="imgProyecto"><br>
+             <div class="lists">
+               <ul class="nes-list is-circle">
+                <li><a href="https://github.com/paulaspeciale/pi-countriesHenry"> Link al Repositorio</a></li>
+                <li>Proyecto Individual del Bootcamp - soyHenry</li>
+                <li> Donde se ponen en practica todas las tecnologias aprendidas en el bootcamp.</li>        
+               </ul>
+             </div>
+          </div>
+            <button  type="button" class="nes-btn is-primary derecha" id="cancel2">Salir</button><br>
+          </dialog> 
+            <!-- Proyectos          -->
+           <br> <span id="show" >El Campito Refugio</span>
+           <br> <span id="show2" >Countries - App</span>
+          
+        </div>
+      </div>
+    </div>
+  
+
+    <footer>
+     </i><button class="nes-btn is-primary" onclick="myFunction()">Contactame</button> <br><br>
+      <div id="contacto">
+        <section class="nes-container ">
+               <section class="message -left paddingLeft">
+                <div class="nes-balloon from-left mario">
+                <p>paulaspeciale@gmail.com</p>
+              </div>
+           
+         </section>
+         <i class="nes-mario"></i>
+        </section>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>

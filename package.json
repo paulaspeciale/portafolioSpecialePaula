@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "bootstrap": "^3.4.1",
+    "nes.icons": "^2.0.1",
+    "node": "^18.13.0"
+  }
+}
