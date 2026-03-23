@@ -1,26 +1,153 @@
 <!DOCTYPE html>
-<html lang ="es">
+<html lang="es">
   <head>
-    <meta charset="utf-8" />
-
-    <title>Paula Speciale </title>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css" />
-  
-   
-  </head>
-
-  <body>
+    <!-- Titulo -->
+    <title>Paula Speciale</title>
+    <!-- Favicon -->
     
-    <header>
-     <p> aca va el navbar</p>     
-    </header>
-    <main>
-      <p>aca va el contenido</p>
-    </main>
-    <footer>
-      <p>footer</p>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="imagenes/icono.png" width="50" alt="Logo">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero">
+      <div class="hero-principal d-flex flex-row ">
+        <img class="hero-imagen-desarrollador rounded-circle" src="./assets/img/profile_pic.png" alt="Foto estilo pixel art de Paula Speciale">
+
+        <div class="hero-text" >
+          <h2>Hola,</h2>
+          <h2>soy Paula Speciale</h2>
+          <h1>Full-Stack Web Developer</h1>
+          <img src="./assets/svg/libros.svg" alt="Libro"><p class="medium-text">hablo de libros</p>
+          <br>
+          <img src="./assets/svg/design.svg" alt="Computadora"><p class="medium-text">diseño cosas</p>
+          <div class="redes-sociales-contenedor">          
+             <a href="https://www.linkedin.com/in/paula-speciale-b834b826/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+             <a href="https://github.com/paulaspeciale/" target="_blank" rel="noopener noreferrer">Github</a>
+             <a href="https://roadmap.sh/u/paulaspeciale" target="_blank" rel="noopener noreferrer"  class="nes-badge">RoadMap</a>
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi contenedor" ">
+      <div class="contenedor-sobre-mi">
+        <h2>Mi Stack</h2>
+       <ul>
+        <li>HTML/CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>SQL</li>
+       </ul>
+      </div>
+    </section>
+      
+    <!-- Proyectos -->
+  <section id="proyectos" class="proyectos contenedor" ">
+      <div class="contenedor-proyectos">
+        <h2>Proyectos</h2>
+       <ul>
+        <li>Pomodoro</li>
+        <li>Planificador</li>
+        <li>Ruleta</li>
+       </ul>
+      </div>
+    </section>
+
+    <!-- Articulos -->
+      <section id="articulos" class="articulos contenedor" ">
+      <div class="contenedor-articulos">
+        <h2>Articulos</h2>
+       <ul>
+        <li>HTML/CSS</li>
+        <li>js</li>
+        <li>Ruleta</li>
+       </ul>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+      <section id="contacto" class="contacto contenedor " >
+      <div class="contenedor-contacto">
+        <h2>Contacto</h2>
+        <form>
+        <fieldset>
+          <legend><img class="contacto-msg" src="./assets/svg/letter.svg" alt=""> Escribe un mensaje</legend>
+          <input type="text" name="name" placeholder="Ingresa tu nombre *"
+          title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+        <input type="email" name="email" placeholder="Ingresa tu correo *" title="Email incorrecto"
+          pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+        <textarea name="comments" cols="30" rows="5" placeholder="Déjame tus comentarios *" required></textarea>
+     
+        <input class="form-btn" type="submit" value="Enviar Mensaje">
+        </fieldset>
+      </form>
+      </div>
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+     <hr>
+    <footer class="footer"> 
+      <div class="contenedor">
+        <div><p>web diseñada por Paula Speciale</p></div>
+        <div>
+          <p><a href="">tiktok1</a></p>
+          <p><a href="">tiktok12</a></p>
+        </div>
+        <div> 
+          <p><a href="">youtube</a></p>
+          <p><a href="">twitch</a></p>
+        </div>
+      </div>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    
   </body>
 </html>
