@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pomodoro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Pomodoro</title>
+</head>
+<body>
+    <main>
+        <div id="ciclos-container">
+            <p>Cuantas Horas quieres ejecutar?</p>
+            <p>Cada hora se organiza: 50 minutos de concentración y 10 minutos de descanso</p>
+            <select name="ciclos" id="ciclos">
+                <option value="0" selected disabled>Selecciona un valor</option>
+                <option value="1">1 hora</option>
+                <option value="2">2 horas</option>
+                <option value="3">3 horas</option>
+                <option value="4">4 horas</option>
+              
+            </select>
+        </div>
+        <div id="countdown" class="countdown hidden">
+          <h1 id="countdown-text">00:00</h1>
+          <h2>Descanso : <span id="descanso" class="hidden"></span></h2>
+        </div>
+    </main>
+    <div class="app">
+      <header>
+        <h1>
+          <i class="fas fa-check-circle"></i>
+          My Tasks
+        </h1>
+        <p id="date"></p>
+      </header>
+
+      <div class="todo-input">
+        <input type="text" id="task-input" placeholder="What do you need to do?" />
+        <button id="add-task">
+          <i class="fas fa-plus"></i>
+        </button>
+      </div>
+
+      <div class="filters">
+        <span class="filter active" data-filter="all"> All </span>
+        <span class="filter" data-filter="active"> Active </span>
+        <span class="filter" data-filter="completed"> Completed </span>
+      </div>
+
+      <div class="todos-container">
+        <ul id="todos-list">
+       
+        </ul>
+        <div class="empty-state hidden">
+          <i class="fas fa-clipboard-list"></i>
+          <p>No tasks here yet</p>
+        </div>
+      </div>
+
+      <footer>
+        <p id="items-left">0 items left</p>
+        <button id="clear-completed">Clear completed</button>
+      </footer>
+    </div>
+    <script src="./pomodoro.js"></script>
+    <script src="./todo.js"></script>
+</body>
+</html>

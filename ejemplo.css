@@ -1,0 +1,128 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* PIXEL STYLE FONT (fallback) */
+body {
+  font-family: "Courier New", monospace;
+  background: #b9c8d3;
+  color: #1b4f72;
+}
+
+/* SECTIONS */
+.section {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+/* TITLES */
+h1 {
+  font-size: 48px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+/* SUBTITLE */
+.subtitle {
+  margin-bottom: 40px;
+  opacity: 0.7;
+}
+
+/* FLOW */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.step {
+  border: 4px solid #2e6f95;
+  padding: 15px 25px;
+  background: #eaf2f8;
+}
+
+.step.active {
+  background: #d6eaf8;
+}
+
+/* CONCEPT */
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  border: 5px solid #2e6f95;
+  background: #fdfefe;
+  padding: 20px;
+}
+
+.card.highlight {
+  background: #e8d5f0;
+}
+
+.card .img {
+  height: 120px;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+  margin-bottom: 15px;
+}
+
+/* ANALYSIS */
+.bars {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.bar {
+  width: 120px;
+  height: 10px;
+  background: #ccc;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  width: 70%;
+  background: linear-gradient(to right, purple, blue);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  background: #e8d5f0;
+  padding: 40px;
+  border: 5px solid #2e6f95;
+}
+
+.stat {
+  font-size: 32px;
+}
+
+/* NUMBERS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.item {
+  font-size: 40px;
+}
+
+/* THANKS */
+.thanks h1 {
+  font-size: 60px;
+}
+
+/* PIXEL EFFECT (borders more retro) */
+.card, .step, .stats {
+  image-rendering: pixelated;
+  box-shadow: 6px 6px 0 #2e6f95;
+}

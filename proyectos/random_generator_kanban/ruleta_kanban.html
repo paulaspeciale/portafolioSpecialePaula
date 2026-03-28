@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="./ruleta_kanban.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-text">
+        <h2>Lista de libros</h2>
+        <ul></ul>
+      </div>
+      <form action="">
+        <input type="text" class="book" placeholder="Add a new book...">
+      </form>
+    </main>
+    
+    <section class="container">
+      <h1>Simple Kanban Board</h1>
+
+      <div class="board">
+        <!-- LIST 1 -->
+        <div class="list" id="list1">
+          <h2>To Do</h2>
+          <div class="card" draggable="true" id="card1">Wash Dishes</div>
+          <div class="card" draggable="true" id="card2">Buy Groceries</div>
+        </div>
+
+        <!-- LIST 2 -->
+        <div class="list" id="list2">
+          <h2>In Progress</h2>
+          <div class="card" draggable="true" id="card3">Learn to code</div>
+        </div>
+
+        <!-- LIST 3 -->
+        <div class="list" id="list3">
+          <h2>Done</h2>
+        </div>
+      </div>
+    </section>
+
+    <script src="./kanban.js"></script>
+  </body>
+</html>
